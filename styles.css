@@ -5,6 +5,15 @@ body {
   color: #333;
 }
 
+body {
+  background-image: url('goofy.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+  background-size: cover;       /* Makes the image cover the entire background */
+  background-position: center;  /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white;                 /* Adjusts text color for contrast */
+}
+
 .container {
   width: 90%;
   max-width: 800px;
@@ -102,6 +111,15 @@ html {
   .timeline .event {
       padding: 10px;
   }
+  body{
+    background-image: url('goofy-phone.jpg');
+  }
+}
+
+@media (max-width: 1180px) {
+  body{
+    background-image: url('goofy-tab.jpg');
+  }
 }
 
 @media (max-width: 480px) {
@@ -124,14 +142,9 @@ html {
   .container {
       padding: 15px 5px;
   }
-}
-body {
-  background-image: url('goofy.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
-  background-size: cover;       /* Makes the image cover the entire background */
-  background-position: center;  /* Centers the background image */
-  background-attachment: fixed; /* Keeps the background fixed during scrolling */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: white;                 /* Adjusts text color for contrast */
+  body{
+    background-image: url('goofy-phone.jpg');
+  }
 }
 
 /* Optional: Dark overlay for readability */
